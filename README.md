@@ -1,3 +1,3 @@
 # Material Admin
 
-### A free Materialize Admin Template base on SB Admin.
+### A free Materialize Admin Template based on SB Admin.
