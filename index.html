@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A theme based on SB-ADMIN 2 and the framework Materialize">
+    <meta name="author" content="Lázaro Henrique">
+
+    <title>Materialize Admin</title>
+
+    <!-- Styles -->
+    <link href="assets/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/m-admin.css" rel="stylesheet">
+
+    <!-- JS -->
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/m-admin.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper grey lighten-4">
+                <a href="#" class="brand-logo">
+                    <img class="sigu-brand" width="120" src="assets/images/logo.png" alt="Início"/>
+                </a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right nav-profile">
+                    <li>
+                        <a class="dropdown-button" href="#!" data-activates="dropdown1">
+                            <span class="grey-text text-darken-2">Welcome, Administrator</span>
+                            <img src="assets/images/avatar.png" class="responsive-img circle right profile-img" width="40" alt=""/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="navbar-default sidebar left hide-on-med-and-down" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li id="dashboard">
+                            <a class="waves-effect waves-light"
+                               href="#">
+                                <i class="material-icons left">dashboard</i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li id="charts">
+                            <a href="#" class="waves-effect waves-light">
+                                <i class="material-icons left">insert_chart</i>
+                                Charts
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Nova Campanha</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="tables">
+                            <a href="#>" class="waves-effect waves-light">
+                                <i class="material-icons left">grid_on</i>
+                                Tables
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">Nova
+                                        Mensagem</a>
+                                </li>
+                                <li>
+                                    <a href="#">Novo
+                                        Template</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li id="forms">
+                            <a href="#" class="waves-effect waves-light">
+                                <i class="material-icons left">edit</i>
+                                Forms
+                            </a>
+                        </li>
+
+                        <li id="elements">
+                            <a href="#" class="waves-effect waves-light">
+                                <i class="material-icons left">build</i>
+                                Elements
+                            </a>
+                        </li>
+
+                        <li id="samples">
+                            <a href="#" class="waves-effect waves-light">
+                                <i class="material-icons left">content_copy</i>
+                                Sample Pages
+                            </a>
+                        </li>
+
+                        <li id="miscellaneous">
+                            <a href="#" class="waves-effect waves-light">
+                                <i class="material-icons left">view_headline</i>
+                                Miscellaneous
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+
+            <ul class="side-nav" id="mobile-demo">
+                <li id="logo" class="logo">
+                    <a href="#" class="waves-effect waves-light">
+                        Material Admin
+                    </a>
+                </li>
+                <li id="sideDashboard">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="material-icons left">dashboard</i>
+                        Dashboard
+                    </a>
+                </li>
+                <li id="sideCharts">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="material-icons right">local_phone</i>
+                        Charts
+                    </a>
+                </li>
+                <li id="sideCharts">
+                    <a href="<?php echo $this->url('marketing', array('action' => 'index')); ?>"
+                       class="waves-effect waves-light">
+                        <i class="material-icons right">email</i>
+                        Charts
+                    </a>
+                </li>
+                <li id="sideContacts">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="material-icons left">view_headline</i>
+                        Miscellaneous
+                    </a>
+                </li>
+
+                <li id="sideContacts">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="material-icons left">view_headline</i>
+                        Miscellaneous
+                    </a>
+                </li>
+
+                <li id="sideContacts">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="material-icons left">view_headline</i>
+                        Miscellaneous
+                    </a>
+                </li>
+
+                <li id="sideContacts">
+                    <a href="#" class="waves-effect waves-light">
+                        <i class="material-icons left">view_headline</i>
+                        Miscellaneous
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
