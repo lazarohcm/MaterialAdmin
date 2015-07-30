@@ -3,6 +3,13 @@
  */
 
 $(document).ready(function(){
-    $(".dropdown-button").dropdown();
+    $("#dropMessages, #dropAlerts, #dropTask").dropdown({
+        constrain_width: false,
+        belowOrigin: true,
+    });
+
+    $('#dropProfile').dropdown();
+
+
     $(".button-collapse").sideNav();
 });
