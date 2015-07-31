@@ -38,6 +38,17 @@ a.button-collapse {
     height: 64px
 }
 
+.nav-profile li ul.card-panel{
+    padding: 0px;
+    width: 310px;
+    min-width: 0px;
+}
+
+.nav-profile ul.card-panel a{
+    color:#fff;
+
+}
+
 main section.content {
     margin-top: 100px;
 }
