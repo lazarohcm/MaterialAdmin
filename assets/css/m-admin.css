@@ -16,7 +16,6 @@ footer .footer-copyright {
     background-color: rgba(51, 51, 51, 0.08);
 }
 
-
 nav a {
     color: #555;
 }
@@ -34,12 +33,41 @@ a.button-collapse {
 
 }
 
+.nav-profile i{
+    line-height: 64px;
+    height: 64px
+}
+
+main section.content {
+    margin-top: 100px;
+}
+
+main section.content .container {
+    width: 95%;
+}
+
 .profile-img {
     margin-left: 15px;
     margin-top: 12px;
 }
 
-/** Sidebar **/
+.flot-chart {
+    height: 400px;
+    width: 100%;
+    font-size: 13px;
+    line-height: 1.2em;
+}
+
+.flot-chart-content {
+    height: 100%;
+    width: 100%;
+}
+
+.block-element{
+    display: block;
+}
+
+/*** Sidebar ***/
 .sidebar .truncate {
     width: 100px;
     white-space: nowrap;
@@ -75,7 +103,8 @@ a.button-collapse {
     display: inline-block;
     text-align: center;
     font-size: 16px;
-    padding: 0px;
+    padding-right: 2px;
+    padding-left: 2px;
     overflow: hidden;
     text-decoration: none !important;
 }
@@ -178,25 +207,8 @@ ul.sub-menu li div.item-sub-menu {
     margin-top: 15px;
 }
 
-/** SideBar - End **/
+/*SideBar - End*/
 
-.card-panel.card-info {
-    padding: 0px;
-    margin: 0px 0px 0px;
-    width: 310px;
-    min-width: 0px;
-    white-space: normal;
-}
-
-.dropdown-content.card-info li {
-    line-height: 1.42857;
-}
-
-.dropdown-content.card-info li > a,
-.dropdown-content.card-info li > span {
-    font-size: 1rem;
-    color: #fff;
-}
 
 .dropdown-content.card-info li > a:hover,
 .dropdown-content.card-info li > a:active,
@@ -208,4 +220,24 @@ ul.sub-menu li div.item-sub-menu {
 .dropdown-content.card-info li > a small i {
     height: 0px;
     line-height: 0px;
+}
+
+.flot-chart .legend table{
+    width: auto;
+}
+
+@media only screen and (max-width: 990px) {
+    .nav-wrapper .brand-logo {
+        display: none;
+    }
+
+    main section.content {
+        margin-top: 0px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #dropProfile span{
+        display: none;
+    }
 }

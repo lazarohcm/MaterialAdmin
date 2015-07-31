@@ -8,6 +8,9 @@ $(document).ready(function(){
         belowOrigin: true,
     });
 
+
+    $('.nav li').textfill({maxFontPixels: 16});
+
     $('#dropProfile').dropdown();
 
 
