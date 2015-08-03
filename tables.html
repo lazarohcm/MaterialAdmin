@@ -7,7 +7,7 @@
     <meta name="description" content="A theme based on SB-ADMIN 2 and the framework Materialize">
     <meta name="author" content="Lázaro Henrique">
 
-    <title>Material Admin</title>
+    <title>Tables - Material Admin</title>
 
     <!-- Styles -->
     <link href="assets/css/materialize.min.css" rel="stylesheet">
@@ -20,8 +20,23 @@
     <script src="assets/js/m-admin.js"></script>
     <script src="assets/flot/jquery.textfill.min.js"></script>
 
-</head>
+    <script src="assets/dataTables/jquery.dataTables.min.js"></script>
+    <script src="assets/dataTables/dataTables.materialize.js"></script>
+    <link href="assets/dataTables/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="assets/dataTables/dataTables.materialize.css" rel="stylesheet">
 
+
+    <script>
+        $(document).ready(function(){
+            $('#tableTasks').DataTable({
+                language: {
+                    url: '../js/td-language/pt_BR.json'
+                }
+            });
+        });
+    </script>
+
+</head>
 <body>
 <header>
     <nav>
@@ -352,6 +367,101 @@
 
             <div class="divider"></div>
             <br>
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="card">
+                        <div class="card-action blue">
+                            <span class="card-title black-text">DataTables</span>
+                        </div>
+                        <div class="card-content">
+                            <table class="bordered hover stripe centered z-depth-1 hoverable" id="tableTasks">
+                                <thead>
+                                <tr>
+                                    <th data-field="id">Título</th>
+                                    <th data-field="name">Início</th>
+                                    <th data-field="name">Fim</th>
+                                    <th data-field="price">Estado</th>
+                                </tr>
+                                </thead>
+
+                                <tbody>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alvin</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Em andamento</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Jonathan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Aguardando Início</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Jonathan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Desativada</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr><tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr><tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="<?php echo $this->url('attendance', array('action' => 'view')); ?>">Alan</a></td>
+                                    <td>01/01/2015</td>
+                                    <td>30/12/2015</td>
+                                    <td>Finalizada</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
